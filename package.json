@@ -1,0 +1,21 @@
+{
+  "name": "gulp_miso",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k2tt/gulp_miso"
+  },
+  "author": "k2tt",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0",
+    "require-dir": "^0.3.0"
+  }
+}
