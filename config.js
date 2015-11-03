@@ -10,5 +10,13 @@ module.exports = {
   copy: {
     dev: root.dev + '/**/*.html',
     pub: root.pub
+  },
+  sass: {
+    dev: root.dev + '/files/sass/*.scss',
+    pub: root.pub + '/files/css',
+    options: {
+      sourcemap: false,
+      style: 'expanded'
+    }
   }
 };
