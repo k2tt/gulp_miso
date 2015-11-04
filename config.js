@@ -16,7 +16,9 @@ module.exports = {
     pub: root.pub + '/files/css',
     options: {
       sourcemap: false,
-      style: 'expanded'
+      style: 'expanded',
+      emitCompileError: true,
+      compass: false
     }
   }
 };
