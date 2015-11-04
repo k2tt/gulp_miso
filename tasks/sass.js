@@ -8,6 +8,10 @@ gulp.task('sass', function() {
     .on('error', $.notify.onError(function (error) {
       return "Error: " + error.message;
     }))
+    .pipe($.pleeease({
+      autoprefixer: {"browsers": ["last 4 versions"]},
+      minifier: false
+    }))
     .pipe(gulp.dest(config.sass.pub))
     .pipe(browserSync.reload({
       stream: true,
