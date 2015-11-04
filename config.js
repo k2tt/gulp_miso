@@ -20,5 +20,9 @@ module.exports = {
       emitCompileError: true,
       compass: false
     }
+  },
+  img: {
+    dev: root.dev + '/files/img/**',
+    pub: root.pub + '/files/img',
   }
 };
