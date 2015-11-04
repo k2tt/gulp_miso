@@ -5,9 +5,6 @@ var config = require('../config');
 
 gulp.task('sass', function() {
   return $.rubySass(config.sass.dev, config.sass.options)
-    .pipe($.plumber({
-      errorHandler: $.notify.onError("Error: <%= error.message %>") //<-
-    }))
     .pipe(gulp.dest(config.sass.pub))
     .pipe(browserSync.reload({
       stream: true,
