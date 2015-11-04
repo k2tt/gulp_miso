@@ -21,8 +21,20 @@ module.exports = {
       compass: false
     }
   },
-  img: {
+  imagemin: {
     dev: root.dev + '/files/img/**',
     pub: root.pub + '/files/img',
+    options: {
+      progressive: true, //jpg
+      optimizationLevel: 7 //png
+    }
+  },
+  pleeease: {
+    options: {
+      autoprefixer: {
+        "browsers": ["last 4 versions"]
+      },
+      minifier: false
+    }
   }
 };
