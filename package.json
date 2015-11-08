@@ -21,6 +21,7 @@
     "gulp-notify": "~2.2.0",
     "gulp-pleeease": "~2.0.1",
     "gulp-ruby-sass": "~2.0.5",
+    "gulp-webpack": "^1.5.0",
     "require-dir": "^0.3.0"
   }
 }

@@ -3,6 +3,7 @@ var root = {
   dev : './htdocs/dev',
   pub : './htdocs/public'
 };
+var jsFileName = 'main.js';
 
 module.exports = {
   dev: root.dev,
@@ -32,9 +33,22 @@ module.exports = {
   pleeease: {
     options: {
       autoprefixer: {
-        "browsers": ["last 4 versions"]
+        'browsers': ['last 4 versions']
       },
       minifier: false
+    }
+  },
+  js: {
+    dev: root.dev + '/files/js/*.js',
+    pub: root.pub + '/files/js'
+  },
+  webpack: {
+    entry: root.dev + '/files/js/' + jsFileName,
+    output: {
+      filename: '[name].js'
+    },
+    resolve: {
+      extensions: ['', '.js']
     }
   }
 };
